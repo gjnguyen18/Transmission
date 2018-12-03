@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import game.Assets;
 import game.Game;
+import gfx.Instructions;
 import gfx.ScreenTint;
 import input.Button;
 import input.KeyHandler;
@@ -23,11 +24,15 @@ public class GameHandler {
   GameState state;
   ScreenTint tint;
   
+  private Instructions instructions;
+  
   private Button specs;
   
   public GameHandler() {
     k = new KeyHandler();
     m = new MouseHandler();
+    
+    instructions = new Instructions(this);
     
     tint = new ScreenTint("/world/screenTint.png");
     specs = new Button(this, 20, 20, Assets.fpsCap, Assets.fpsCapHover, Assets.fpsCapPress,
@@ -47,6 +52,7 @@ public class GameHandler {
     g.setColor(Color.WHITE);
     g.setFont(new Font("DS-Digital", Font.PLAIN, 24));
     specs.render(g);
+    instructions.render(g);
   }
   
   public void update() {
@@ -62,6 +68,7 @@ public class GameHandler {
     	Game.delta = Game.NANO/Game.FPS;
     	specs.setString("FPS CAP: " + Game.FPS);
     }
+    instructions.update();
   }
   
   //Getters and Setters
