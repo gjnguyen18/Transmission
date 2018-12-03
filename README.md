@@ -6,7 +6,7 @@ Goal:
 Go around solving puzzles to unlock the next section of the map.
 
 In world:
-Move with W A S D
+Move with A and D for left and right, 'space' to jump.
 Press F near stations to open up puzzle.
 Press T to open up dial.
   When in dial, press Q or E to switch between areas.
