@@ -2,6 +2,8 @@
 2D java puzzle platformer
 Developers: Gia-Phong Nguyen, Pascal King, Owen Wolman
 
+Either run source code on IDE or just open .jar file
+
 Goal:
 Go around solving puzzles to unlock the next section of the map.
 
