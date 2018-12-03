@@ -10,7 +10,7 @@ import runtime.GameHandler;
 import wavematcher.WaveMatcher;
  
 /*
- * instructions
+ * instructions updated
  */
 public class Instructions {
 	
